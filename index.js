@@ -46,8 +46,8 @@ bot.command('deposit', (ctx) => {
 });
 
 // 🚀 SERVER LOGIC
-app.use(bot.webhookCallback('/secret-path'));
-bot.telegram.setWebhook(`https://${DOMAIN}/secret-path`);
+app.use(bot.('/secret-path'));
+(`https://${DOMAIN}/secret-path`);
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
