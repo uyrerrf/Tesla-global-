@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Sovereign Terminal</title>
+    <style>
+        body { background: #000; color: #d4af37; font-family: 'Segoe UI', sans-serif; text-align: center; margin: 0; padding: 15px; }
+        .container { max-width: 450px; margin: auto; border: 1px solid #d4af37; border-radius: 20px; padding: 20px; background: linear-gradient(180deg, #0a0a0a 0%, #000 100%); }
+        .glow-text { text-shadow: 0 0 15px #d4af37; color: #fff; font-size: 2.2rem; font-weight: bold; }
+        .stat-card { background: #111; border: 1px solid #333; border-radius: 12px; padding: 15px; margin: 15px 0; }
+        .pet-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .pet-card { border: 1px solid #d4af37; border-radius: 10px; padding: 10px; font-size: 0.8rem; background: #050505; }
+        .pet-card img { width: 100%; border-radius: 8px; margin-bottom: 5px; }
+        .btn { display: block; width: 100%; padding: 15px; margin: 10px 0; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; text-decoration: none; }
+        .btn-gold { background: #d4af37; color: #000; box-shadow: 0 0 15px rgba(212, 175, 55, 0.4); }
+        .btn-blue { background: #0cf; color: #000; box-shadow: 0 0 10px #0cf; }
+        .wallet-text { font-size: 0.65rem; color: #888; background: #000; padding: 5px; border: 1px dashed #444; word-break: break-all; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p style="letter-spacing: 5px; font-size: 0.7rem; margin-bottom: 5px; color: #0cf;">📡 STARLINK NODE: CONNECTED (ANAMBRA)</p>
+        <h1 style="margin: 0; letter-spacing: 2px;">TESLA SOVEREIGN</h1>
+        
+        <div class="stat-card">
+            <p style="margin: 0; font-size: 0.8rem; color: #888;">CURRENT ASSET VALUATION</p>
+            <div class="glow-text" id="val">$1,000,000,000.00</div>
+            <p style="color: #0f0; font-size: 0.8rem;">● Sovereign Mining: ACTIVE (+0.5% ROI)</p>
+        </div>
+
+        <h3>🐾 AI PET FLEET</h3>
+        <div class="pet-grid">
+            <div class="pet-card">
+                <img src="https://img.freepik.com/premium-photo/robotic-cyber-dog-futuristic-concept-ai-generated_532963-339.jpg">
+                <b>Cyber-Hound v1</b><br>$500 USDT
+                <button class="btn-gold" style="padding: 5px; font-size: 0.7rem;" onclick="buy('Cyber-Hound')">PURCHASE</button>
+            </div>
+            <div class="pet-card">
+                <img src="https://img.freepik.com/premium-photo/futuristic-robotic-cat-cyberpunk-style-digital-art_743206-538.jpg">
+                <b>Tesla Falcon AI</b><br>$2,500 USDT
+                <button class="btn-gold" style="padding: 5px; font-size: 0.7rem;" onclick="buy('Tesla Falcon')">PURCHASE</button>
+            </div>
+        </div>
+
+        <h3>🏎️ SOVEREIGN VEHICLES</h3>
+        <div class="stat-card">
+            <img src="https://www.tesla.com/sites/default/files/models-assets/spectacular/model-s.png" width="100%">
+            <p>Model S Plaid: $300,000 Tier</p>
+            <button class="btn-gold" onclick="buy('Model S Plaid')">UPGRADE OWNERSHIP</button>
+        </div>
+
+        <div class="stat-card" style="border-color: #0cf;">
+            <p style="color: #0cf; font-size: 0.7rem;">👑 SATELLITE GOVERNANCE PORTAL</p>
+            <p style="font-size: 0.8rem;">Voting Power: 10,000 Credits</p>
+            <button class="btn-blue" onclick="alert('Proposal: New Supercharger in Onitsha - VOTE RECORDED')">ENTER PORTAL</button>
+        </div>
+
+        <div class="stat-card">
+            <p style="font-size: 0.8rem;">💳 GLOBAL DEPOSIT NODE</p>
+            <p style="font-size: 0.7rem; margin: 5px 0;">BTC:</p>
+            <div class="wallet-text">bc1qrp46x9rdemwlnc88m088yk8d304mj7ayu8scfa</div>
+            <p style="font-size: 0.7rem; margin: 5px 0;">USDT (ERC20):</p>
+            <div class="wallet-text">0x7F02ef79D1648e8674cc1012fC9e45714A8820A3</div>
+        </div>
+
+        <a href="https://wa.me/12483462118" class="btn btn-gold">CONTACT DIRECTOR CHRIS</a>
+    </div>
+
+    <script>
+        // Billion Dollar display logic
+        let isDirector = true; 
+        let display = document.getElementById('val');
+        
+        if(isDirector) {
+            display.innerText = "$1,000,000,000.00";
+        }
+
+        function buy(item) {
+            alert(`To purchase ${item}, transfer funds to the wallets displayed and send proof to Director Chris.`);
+        }
+    </script>
+</body>
+</html>
