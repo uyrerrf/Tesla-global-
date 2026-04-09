@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Sovereign Wealth Terminal</title>
+    <style>
+        body { background-color: #000; color: #d4af37; font-family: 'Arial', sans-serif; text-align: center; padding: 20px; margin: 0; }
+        .container { border: 2px solid #d4af37; padding: 30px; border-radius: 20px; background: rgba(20, 20, 20, 0.9); max-width: 450px; margin: 50px auto; box-shadow: 0 0 30px rgba(212, 175, 55, 0.3); }
+        h1 { letter-spacing: 4px; text-transform: uppercase; font-size: 1.8rem; border-bottom: 1px solid #d4af37; padding-bottom: 10px; }
+        .balance-box { margin: 30px 0; }
+        .balance-label { font-size: 0.8rem; color: #888; text-transform: uppercase; }
+        .balance-amount { font-size: 3rem; color: #fff; font-weight: bold; text-shadow: 0 0 10px #d4af37; }
+        .asset-list { text-align: left; background: #111; padding: 15px; border-radius: 10px; margin-bottom: 20px; font-size: 0.9rem; }
+        .btn { display: block; width: 100%; padding: 18px; margin: 10px 0; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; text-decoration: none; font-size: 1rem; transition: 0.3s; }
+        .btn-gold { background-color: #d4af37; color: #000; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); }
+        .btn-gold:hover { background-color: #fff; color: #000; }
+        .btn-outline { border: 1px solid #d4af37; color: #d4af37; background: transparent; }
+        .footer-note { font-size: 0.7rem; color: #444; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tesla Sovereign</h1>
+        <p style="color: #888;">2026 Global Wealth Management</p>
+
+        <div class="balance-box">
+            <div class="balance-label">Current Asset Valuation</div>
+            <div class="balance-amount" id="counter">$500.00</div>
+            <p style="color: #0f0; font-size: 0.8rem;">● Tesla Pet AI: SYNCED (+0.5% ROI)</p>
+        </div>
+
+        <div class="asset-list">
+            <p>🏎️ <strong>Tier 1:</strong> Tesla Model S Plaid (Sovereign Edition)</p>
+            <p>🐾 <strong>AI Pet:</strong> Active Monitoring Enabled</p>
+            <p>📡 <strong>Node:</strong> Global Satellite Link Active</p>
+        </div>
+
+        <a href="https://wa.me/12483462118" class="btn btn-gold">REQUEST WITHDRAWAL</a>
+        <button class="btn btn-outline" onclick="showDeposit()">DEPOSIT ASSETS</button>
+
+        <p class="footer-note">Authorized by Tesla Sovereign Wealth Fund. Secure Terminal ID: 2026-TSLA-OFFICIAL</p>
+    </div>
+
+    <script>
+        // Professional ROI Counter (Increases slightly every few seconds)
+        let value = 500.00;
+        setInterval(() => {
+            value += (Math.random() * 0.05);
+            document.getElementById('counter').innerText = '$' + value.toFixed(2);
+        }, 4000);
+
+        function showDeposit() {
+            alert("💳 TESLA OFFICIAL GATEWAY\n\nBTC: bc1qrp46x9rdemwlnc88m088yk8d304mj7ayu8scfa\n\nUSDT: 0x7F02ef79D1648e8674cc1012fC9e45714A8820A3\n\nSend payment then contact Director Chris on WhatsApp.");
+        }
+    </script>
+</body>
+  </html>
+          
